@@ -1,0 +1,9 @@
+References on Cha Cha
+
+1. https://musigma.blog/2021/02/06/chacha.html
+
+2. https://github.com/vitorstraggiotti/cha/blob/main/v4.0.0/src/chacha20.c
+
+3. https://www.scottbrady91.com/c-sharp/xchacha20-poly1305-dotnet
+
+4.  https://cr.yp.to/streamciphers/timings/estreambench/submissions/salsa20/chacha8/ref/chacha.c
