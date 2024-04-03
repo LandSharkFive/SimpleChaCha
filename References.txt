@@ -1,9 +1,10 @@
 References on Cha Cha
 
-1. https://musigma.blog/2021/02/06/chacha.html
+1. "Exploring the Cha Cha Stream Cipher", Matt Sicker, Feb 2021, https://musigma.blog/2021/02/06/chacha.html
 
-2. https://github.com/vitorstraggiotti/cha/blob/main/v4.0.0/src/chacha20.c
+2. "Cha:  Very Simple Encryption and Decryption Tool", Vitor Henrique Andrade Helfensteller Straggiotti Silva, 2022, 
+    https://github.com/vitorstraggiotti/cha,
 
-3. https://www.scottbrady91.com/c-sharp/xchacha20-poly1305-dotnet
+3. "XChaCha20-Poly1305: A Primer with Examples in .NET", Scott Brady, Oct 2020, https://www.scottbrady91.com/c-sharp/xchacha20-poly1305-dotnet
 
-4.  https://cr.yp.to/streamciphers/timings/estreambench/submissions/salsa20/chacha8/ref/chacha.c
+4. "ChaCha8", D. J. Bernstein, 2008, https://cr.yp.to/streamciphers/timings/estreambench/submissions/salsa20/chacha8/ref/chacha.c
