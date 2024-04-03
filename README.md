@@ -12,7 +12,7 @@ A simple encryption and decryption program using the Cha Cha algorithm.
 
 ## Warning
 
-This program is for Educational Purposes only.  In order to be secure, the Nonce must be unique for each message that is sent.  Never use the same Nonce value twice.  Using the same Nonce twice will expose the keys, IV and nonces.  The basis of the Cha Cha algorithm is simple addition with a plain text messages.
+This program is for Educational Purposes only.  In order to be secure, the Nonce must be unique for each message that is sent.  Never use the same Nonce value twice.  Using the same Nonce twice will expose the keys, IV and nonces.  The basis of the Cha Cha algorithm is addition with a plain text messages.
 
 ## Files
 
