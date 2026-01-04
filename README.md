@@ -1,24 +1,29 @@
 # Simple Cha Cha
 
-This program is a simple implementation the Cha Cha encryption algorithm.  The program encrypts and decrypts a paragraph using Cha Cha.
+A streamlined, "no-nonsense" implementation of the Cha Cha stream cipher in C#. Designed for low-effort integration where a functional, multi-pass encryption layer is required without the bloat of enterprise security suites.
 
-## Install and Build
 
-The is a C# Console-Mode Project.  Open with  Visual Studio 2022 and above to compile. 
 
-## Description:
+### The Core Logic
+This implementation focuses on the fundamental Cha Cha quarter-round transformations. It is built for clarity and speed, providing a reliable way to encrypt and decrypt data blocks via simple addition and bitwise operations.
 
-A simple encryption and decryption program using the Cha Cha algorithm.  
+### ⚠️ Critical Security Warning
+To maintain the integrity of the encryption, the **Nonce must be unique** for every single message. 
+* **Never reuse a Nonce.** * Reusing a Nonce with the same key exposes the keystream, effectively rendering the encryption useless against even basic cryptanalysis.
 
-## Warning
+### What's Under the Hood (and What's Not)
+This version is stripped down to the essentials. To keep the codebase lean and "educational," the following features are **deliberately omitted**:
+* **Poly1305 MAC:** No built-in message authentication.
+* **Padding:** Handling of non-block-aligned data is left to the user.
+* **Sub-Key Generation:** Standard key-derivation functions (KDF) are not included.
+* **Secure Containers:** Key storage is not hardened against memory-dump attacks.
 
-This program is for Educational Purposes only.  In order to be secure, the Nonce must be unique for each message that is sent.  Never use the same Nonce value twice.  Using the same Nonce twice will expose the keys, IV and nonces.  The basis of the Cha Cha algorithm is addition with a plain text messages.
+### Build & Execution
+* **Language:** C#
+* **Requirement:** Visual Studio 2022+
+* **Sample:** See `sample.txt` for a demonstration of a standard encryption/decryption pass.
 
-## Files
+---
 
-For more information on the Cha Cha algorithm, see the references.txt file. A sample run of the program is in the sample.txt file.
-
-## Enchancements
-
-Several enchancements are deliberately not included in the source code.  These missing enhancements are left as exercises.  The missing enchancements include 1305 Poly MAC header, Padding, Sub-Key Generation and implementing Secure Containers for the key. 
-
+### References
+Technical specifications and algorithmic deep-dives are located in `references.txt`.
